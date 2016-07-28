@@ -1,0 +1,11 @@
+<!doctype html>
+{% extends "base_template.pt" %}
+{% block body %}
+  <ul>
+  {% for user in users %}
+        <!--<li><a href="{{ WebExample.py }}">{{ user.name }}</a></li>-->
+
+        <li>{{ user  }}</li>
+  {% endfor %}
+  </ul>
+{% endblock %}

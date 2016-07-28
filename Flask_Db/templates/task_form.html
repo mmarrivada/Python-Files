@@ -1,0 +1,38 @@
+<!--{% extends "base_template.pt" %}-->
+{% block content %}
+<div class="base-template">
+    <div class = "row">
+        <div class="col-xs-10 col-sm-4 col-sm-offset-2">
+         <h5> Update Info</h5>
+        </div>
+    </div>
+    <form method="post" action="addtask">
+	<div class = "row">
+
+		<div class="col-xs-10 col-sm-3 col-sm-offset-4">
+             <div class="form-group">
+             <input  id = "id" type="text" name = "id" class= "form-control input-xs" placeholder="id">
+             </div>
+         </div>
+	</div>
+	<div class = "row">
+
+		<div class="col-xs-10 col-sm-3 col-sm-offset-4">
+             <div class="form-group">
+             <input id ="task" name="task" type="text" class= "form-control input-xs" placeholder="task">
+             </div>
+         </div>
+	</div>
+	<div class = "row">
+        {% if error %}
+            <p class="error" >{{ error }}</p>
+        {% endif %}
+		<div class="col-xs-10 col-sm-3 col-sm-offset-4">
+             <div class="form-group">
+             <button id ="Update" type="submit" class= "btn btn-large btn-block btn-primary">Update</button>
+             </div>
+         </div>
+	</div>
+	</form>
+</div>
+{% endblock %}

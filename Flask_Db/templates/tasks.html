@@ -1,0 +1,9 @@
+{% extends "base_template.pt" %}
+{% block content %}
+<div class="base-template">
+{% for task in tasks %}
+{{task['id']}}   {{task['task']}}    {{ task['status']}}
+{% endfor %}
+
+</div>
+{% endblock %}

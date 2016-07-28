@@ -1,0 +1,16 @@
+<!doctype html>
+
+<table>
+{% for dict_item in parent_dict %}
+    {% for key,value in dict_item.items() %}
+        <tr>
+            <th> {{ key }} </th>
+        </tr>
+        <tr>
+           <td> {{ value }} </td>
+        </tr>
+    { % endfor %}
+{% endfor %}
+</table>
+
+
